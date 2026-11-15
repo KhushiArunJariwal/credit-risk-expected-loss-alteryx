@@ -1,0 +1,668 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2026.3" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="474" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>credit_risk_dataset.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="person_age" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="person_income" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="person_home_ownership" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="person_emp_length" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="loan_intent" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="loan_grade" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="loan_amnt" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="loan_int_rate" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="loan_status" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="loan_percent_income" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="cb_person_default_on_file" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="cb_person_cred_hist_length" size="254" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="534" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="person_age" selected="True" />
+            <Field field="person_income" selected="True" />
+            <Field field="person_home_ownership" selected="True" />
+            <Field field="person_emp_length" selected="True" />
+            <Field field="loan_intent" selected="True" />
+            <Field field="loan_grade" selected="True" />
+            <Field field="loan_amnt" selected="True" />
+            <Field field="loan_int_rate" selected="True" />
+            <Field field="loan_status" selected="True" />
+            <Field field="loan_percent_income" selected="True" />
+            <Field field="cb_person_default_on_file" selected="True" />
+            <Field field="cb_person_cred_hist_length" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="person_age" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="Byte" />
+            <Field name="person_income" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="Int32" />
+            <Field name="person_home_ownership" size="8" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="String" />
+            <Field name="person_emp_length" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="Double" />
+            <Field name="loan_intent" size="17" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="V_String" />
+            <Field name="loan_grade" size="1" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="String" />
+            <Field name="loan_amnt" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="Int32" />
+            <Field name="loan_int_rate" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="Double" />
+            <Field name="loan_status" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="Byte" />
+            <Field name="loan_percent_income" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="Double" />
+            <Field name="cb_person_default_on_file" size="1" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="String" />
+            <Field name="cb_person_cred_hist_length" source="File: C:\Users\khushi\OneDrive\Documents\ProjectA\credit_risk_dataset.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="606" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="person_age" />
+            <Field field="person_income" />
+            <Field field="person_home_ownership" />
+            <Field field="person_emp_length" />
+            <Field field="loan_intent" />
+            <Field field="loan_grade" />
+            <Field field="loan_amnt" />
+            <Field field="loan_int_rate" />
+            <Field field="loan_status" />
+            <Field field="loan_percent_income" />
+            <Field field="cb_person_default_on_file" />
+            <Field field="cb_person_cred_hist_length" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="714" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF ToNumber([person_age]) &gt; 100 THEN &quot;Impossible age&quot;&#xA;ELSEIF ToNumber([person_emp_length]) &gt; 60 THEN &quot;Impossible employment length&quot;&#xA;ELSEIF IsEmpty([loan_int_rate]) THEN &quot;Missing interest rate&quot;&#xA;ELSEIF IsEmpty([person_emp_length]) THEN &quot;Missing employment length&quot;&#xA;ELSE &quot;OK&quot;&#xA;ENDIF" field="DQ_Issue" size="2147483647" type="V_String" enabled="true" />
+            <FormulaField expression="IF [DQ_Issue] IN (&quot;Impossible age&quot;, &quot;Impossible employment length&quot;) THEN &quot;Critical&quot;&#xA;ELSEIF [DQ_Issue] = &quot;OK&quot; THEN &quot;Clean&quot;&#xA;ELSE &quot;Warning&quot;&#xA;ENDIF" field="DQ_Severity" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DQ_Issue = IF ToNumber([person_age]) &gt; 100 THEN "Impossible age"
+ELSEIF ToNumber...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="822" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="DQ_Issue" action="GroupBy" rename="DQ_Issue" />
+            <SummarizeField field="DQ_Issue" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="774" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>DQ_Issue</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2026-11-15 12:28:52</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2026-11-15 12:28:52</StartDate>
+              <EndDate>2026-11-15 12:28:52</EndDate>
+              <Operand>OK</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[DQ_Issue] != "OK"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="858" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\khushi\OneDrive\Documents\ProjectA\DQ_Exceptions.xlsx|||Exceptions</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DQ_Exceptions.xlsx
+Query=Exceptions</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="774" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>DQ_Severity</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2026-11-15 12:35:38</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Critical</Operand>
+              <StartDate>2026-11-15 12:35:38</StartDate>
+              <EndDate>2026-11-15 12:35:38</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[DQ_Severity] != "Critical"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="858" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="loan_grade" action="GroupBy" rename="loan_grade" />
+            <SummarizeField field="loan_grade" action="Count" rename="Count" />
+            <SummarizeField field="loan_status" action="Sum" rename="Sum_loan_status" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="954" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sum_loan_status]/[Count]" field="PD" size="8" type="Double" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[PD = [Sum_loan_status]/[Count]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1134" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="loan_grade" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="loan_grade" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_loan_grade" selected="False" rename="Right_loan_grade" input="Right_" />
+                <SelectField field="Right_Count" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_loan_status" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1230" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="0.45" field="LGD" size="8" type="Double" enabled="true" />
+            <FormulaField expression="[loan_amnt]" field="EAD" size="8" type="Double" enabled="true" />
+            <FormulaField expression="[PD]*[LGD]*[EAD]" field="EL" size="8" type="Double" enabled="true" />
+            <FormulaField expression="IF [PD] &lt; 0.15 THEN &quot;Low&quot;&#xA;ELSEIF [PD] &lt; 0.40 THEN &quot;Medium&quot;&#xA;ELSE &quot;High&quot;&#xA;ENDIF" field="Risk_Bucket" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>LGD = 0.45
+EAD = [loan_amnt]
+EL = [PD]*[LGD]*[EAD]
+Risk_Bucket = IF [PD] &lt; 0.15 ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1314" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Risk_Bucket" action="GroupBy" rename="Risk_Bucket" />
+            <SummarizeField field="Risk_Bucket" action="Count" rename="Count" />
+            <SummarizeField field="EAD" action="Sum" rename="Sum_EAD" />
+            <SummarizeField field="EL" action="Sum" rename="Sum_EL" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1398" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Count" action="Sum" rename="Total_Count" />
+            <SummarizeField field="Sum_EAD" action="Sum" rename="Total_EAD" />
+            <SummarizeField field="Sum_EL" action="Sum" rename="Total_EL" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1482" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1578" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Count] / [Total_Count]" field="Loan_Share" size="8" type="Double" enabled="true" />
+            <FormulaField expression="[Sum_EAD] / [Total_EAD]" field="EAD_Share" size="8" type="Double" enabled="true" />
+            <FormulaField expression="[Sum_EL] / [Total_EL]" field="EL_Share" size="8" type="Double" enabled="true" />
+            <FormulaField expression="IF [Risk_Bucket] = &quot;High&quot; THEN 0.15&#xA;ELSEIF [Risk_Bucket] = &quot;Medium&quot; THEN 0.55&#xA;ELSE 1&#xA;ENDIF" field="Limit" size="8" type="Double" enabled="true" />
+            <FormulaField expression="IF [EAD_Share] &gt; [Limit] THEN &quot;BREACH&quot; ELSE &quot;Within Limit&quot; ENDIF" field="Limit_Status" size="2147483647" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Loan_Share = [Count] / [Total_Count]
+EAD_Share = [Sum_EAD] / [Total_EAD]
+EL_Shar...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1110" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\khushi\OneDrive\Documents\ProjectA\ProjectA_Credit_Risk_Report.xlsx|||DQ_Summary</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ProjectA_Credit_Risk_Report.xlsx
+Query=DQ_Summary</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1206" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\khushi\OneDrive\Documents\ProjectA\ProjectA_Credit_Risk_Report.xlsx|||PD_by_Grade</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ProjectA_Credit_Risk_Report.xlsx
+Query=PD_by_Grade</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1302" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\khushi\OneDrive\Documents\ProjectA\ProjectA_Credit_Risk_Report.xlsx|||Limit_Monitoring</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ProjectA_Credit_Risk_Report.xlsx
+Query=Limit_Monitoring</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Unique" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="17" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Project_A_CreditRisk</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="94030ed6-5590-45e9-b279-ac48c1a86b35" />
+      <Telemetry>
+        <PreviousWorkflowId value="496a49b7-6271-4a72-a9bf-b24572ed6418" />
+        <OriginWorkflowId value="496a49b7-6271-4a72-a9bf-b24572ed6418" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
